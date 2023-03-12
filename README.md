@@ -9,6 +9,8 @@
 ### Install tools
 
 ```shell
+apt update
+
 apt-get install -y git gcc build-essential curl pkg-config
 ```
 
