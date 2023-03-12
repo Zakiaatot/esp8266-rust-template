@@ -6,6 +6,12 @@
 
 `Attention!` Only pass the test in `Ubuntu 22.04`
 
+### Install tools
+
+```shell
+apt-get install -y git gcc build-essential curl pkg-config
+```
+
 ### Clone template
 
 ```shell
@@ -18,6 +24,8 @@ git clone https://github.com/Zakiaatot/esp8266-rust-template
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+source "$HOME/.cargo/env"
 ```
 
 - xtensa-lx106-elf-gcc (for esp8266 cpu):
@@ -26,30 +34,39 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```shell
 mkdir -p ~/esp
+
 cd ~/esp
+
 curl -O https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
+
 tar -xzf ./xtensa-lx106-elf-*
+
 export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"
 ```
 
 - [espup](https://github.com/esp-rs/espup) + [cargo-espflash](https://github.com/esp-rs/espflash):
 
 ```shell
-sudo apt-get install -y gcc build-essential curl pkg-config
 cargo install espup
+
 cargo install cargo-espflash
+
 espup install 
+
 . $HOME/export-esp.sh
 ```
 
 or
 
 ```shell
-sudo apt-get install -y gcc build-essential curl pkg-config
 cargo install binstall
+
 cargo binstall espup
-cargo install cargo-espflash
+
+cargo binstall cargo-espflash
+
 espup install 
+
 . $HOME/export-esp.sh
 ```
 
