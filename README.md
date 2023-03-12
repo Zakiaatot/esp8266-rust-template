@@ -6,13 +6,15 @@
 
 ### Clone template
 
-`git clone https://github.com/Zakiaatot/esp8266-rust-template`
+```shell
+git clone https://github.com/Zakiaatot/esp8266-rust-template
+```
 
 ### Prepare toolchains
 
 - [espup](https://github.com/esp-rs/espup) + [cargo-espflash](https://github.com/esp-rs/espflash):
 
-```bash
+```shell
 cargo install espup
 cargo install cargo-espflash
 espup install 
@@ -21,11 +23,15 @@ espup install
 
 ### Compile
 
-`cargo build --release`
+```shell
+cargo build --release
+```
 
 ### Flash
 
-`cargo espflash --release --monitor /dev/ttyUSB*`
+```shell
+cargo espflash --release --monitor /dev/ttyUSB*
+```
 
 ## Related links
 
