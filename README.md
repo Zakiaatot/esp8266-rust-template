@@ -35,6 +35,7 @@ export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"
 - [espup](https://github.com/esp-rs/espup) + [cargo-espflash](https://github.com/esp-rs/espflash):
 
 ```shell
+sudo apt-get install -y gcc build-essential curl pkg-config
 cargo install espup
 cargo install cargo-espflash
 espup install 
@@ -44,6 +45,7 @@ espup install
 or
 
 ```shell
+sudo apt-get install -y gcc build-essential curl pkg-config
 cargo install binstall
 cargo binstall espup
 cargo install cargo-espflash
