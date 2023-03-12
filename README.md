@@ -21,6 +21,16 @@ espup install
 . $HOME/export-esp.sh
 ```
 
+or
+
+```shell
+cargo install binstall
+cargo binstall espup
+cargo install cargo-espflash
+espup install 
+. $HOME/export-esp.sh
+```
+
 ### Compile
 
 ```shell
