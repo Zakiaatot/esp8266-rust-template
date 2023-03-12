@@ -1,6 +1,10 @@
 # esp8266-rust-template
 
-**A very simple project template for esp8266 in `rust`.**
+**🤔 A very simple project template for esp8266 in `rust`.**
+
+Nice picture! 😍
+
+![8266](./screenshot/8266.jpg)
 
 ## Usage
 
@@ -49,9 +53,11 @@ export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"
 - [espup](https://github.com/esp-rs/espup) + [cargo-espflash](https://github.com/esp-rs/espflash):
 
 ```shell
-cargo install espup
+cargo install cargo-binstall
 
-cargo install cargo-espflash
+cargo binstall espup
+
+cargo binstall cargo-espflash
 
 espup install 
 
@@ -61,11 +67,9 @@ espup install
 or
 
 ```shell
-cargo install binstall
+cargo install espup
 
-cargo binstall espup
-
-cargo binstall cargo-espflash
+cargo install cargo-espflash
 
 espup install 
 
