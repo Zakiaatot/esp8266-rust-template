@@ -4,7 +4,7 @@
 
 ## Usage
 
-`Attention! Only pass the test in   Ubuntu 22.04.`
+`Attention!` Only pass the test in `Ubuntu 22.04`
 
 ### Clone template
 
