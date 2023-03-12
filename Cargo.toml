@@ -1,0 +1,17 @@
+[package]
+name = "esp8266-rust-template"
+version = "0.1.0"
+authors = ["Zakiaatot"]
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+esp8266-hal = { version = "0.5.1", optional = true}
+xtensa-lx-rt = { version = "0.15.0", features = ["esp8266"], optional = true}
+panic-halt = "0.2.0"
+
+[features]
+default = ["xtensa-lx-rt", "esp8266-hal"]
+
+[profile.dev.package.xtensa-lx-rt]
+opt-level = 'z'
